@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
-  color: #fff !important;
+  color: #ffffff !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -120,7 +120,7 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -393,7 +393,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: 0.3s ease-in-out;
+    transition: 1.3s ease-in-out;
 }
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
@@ -429,7 +429,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.4s ease-in-out;
 }
 .proj-imgbx:hover::before {
-  height: 90%;
+  height: 100%;
 }
 .proj-txtx {
   position: absolute;
@@ -442,7 +442,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 .proj-imgbx:hover .proj-txtx {
-  top: 45%;
+  top: 60%;
   opacity: 1;
 }
 .proj-txtx h4 {
@@ -465,6 +465,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.internship-info {
+  background-color: #282c34;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #61dafb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.internship-info:hover {
+  transform: scale(1.05);
+}
+
+.internship-info h4 {
+  font-size: 24px;
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.internship-info p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.internship-info strong {
+  color: #fff;
+}
+
 
 /************ Projects Css ************/
 .contact {
@@ -484,7 +513,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(246, 245, 245, 0.5);
   border-radius: 20px;
-  color: #9a8080;
+  color: #f0e7e7;
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
@@ -493,7 +522,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 .contact form input:focus, .contact form textarea:focus {
-  background: rgb(202, 168, 168);
+  background: rgb(245, 242, 242);
   color: #000000;
 }
 .contact form input::placeholder, .contact form textarea::placeholder {

@@ -37,18 +37,18 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
+                <h2>Practicalities</h2>
                 <p>Projects on a resume showcase practical skills and problem-solving abilities, differentiating you from other candidates. They demonstrate hands-on experience, proving your ability to apply theoretical knowledge in real-world scenarios. A well-documented project portfolio highlights initiative, communication skills, and continuous learning, making you a valuable asset to potential employers. Including quantifiable achievements and a link to an online portfolio further strengthens your resume.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Project Details</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Experience</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -80,7 +80,25 @@ export const Projects = () => {
 </p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                    
+                        
+                    <div class="internship-info">
+  <h4>Data Science Intern</h4>
+  <p><strong>Company:</strong> Oasis Info Byte</p>
+  <p><strong>Duration:</strong> 1 month</p>
+  <p><strong>About the Internship:</strong> Worked on various data science projects and gained hands-on experience in areas like IRIS flower classification, unemployment data analysis, sales price prediction, car price prediction, and email spam detection.</p>
+  <p><strong>Experience:</strong> Developed analytical and problem-solving skills through the completion of diverse mini projects. Collaborated with a team to enhance data analysis techniques and contribute to the field of data science.</p>
+</div>
+
+<div class="internship-info">
+  <h4>Cisco VIP Program - Virtual Internship</h4>
+  <p><strong>Duration:</strong> Completed the course</p>
+  <p><strong>Training:</strong> Introduction to Cybersecurity</p>
+  <p><strong>Mode:</strong> Online</p>
+  <p><strong>About the Internship:</strong> Participated in Cisco's Virtual Internship Program (VIP) focused on cybersecurity. Completed a comprehensive course introducing key concepts in cybersecurity, enhancing knowledge in the field.</p>
+  <p><strong>Experience:</strong> Gained insights into cybersecurity practices, protocols, and technologies. Acquired foundational knowledge and practical skills through hands-on training modules.</p>
+</div>
+
+                      
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
