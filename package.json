@@ -2,15 +2,16 @@
   "name": "portfolio",
   "version": "1.0.0",
   "homepage": ".",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "description": "This project was bootstrapped with Create React App.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build && npm run build:functions",
+    "deploy": "npm run deploy:frontend && npm run deploy:functions",
+    "deploy:frontend": "gh-pages -d build",
+    "deploy:functions": "vercel --prod"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "vercel": "^24.1.0"
   }
 }
